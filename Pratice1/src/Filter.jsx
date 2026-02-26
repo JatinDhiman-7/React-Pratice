@@ -54,14 +54,15 @@ function Filter() {
             </div>
             <div>
                 <ul>
-                    {filter.map((item) =>
-                    (<>
-                        <li>{item.id}</li>
-                        <li>{item.name}</li>
-                        <li>{item.category}</li>
-                        <li>{item.price}</li>
-                        <li>{item.rating}</li>
-                    </>
+                    <h1>{filter[0]?.category}</h1>
+                    {filter.map((item) => (
+                        <div>
+                                <li>{item.id}</li>
+                                <li>{item.name}</li>
+                                <li>{item.category}</li>
+                                <li>{item.price}</li>
+                                <li>{item.rating}</li>
+                        </div>
                     ))}
                 </ul>
             </div>

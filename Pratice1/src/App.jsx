@@ -2,6 +2,7 @@ import Controlled from "./Controlled";
 import { useState } from "react";
 import Todo from "./todo";
 import Filter from "./Filter";
+import SagarCode from "./SagarCode";
 function App() {
   const [count, setCount] = useState(0);
   return (
@@ -12,7 +13,9 @@ function App() {
       <button onClick={()=>setCount(0)}>Reset</button> */}
       {/* <Controlled /> */}
       {/* <Todo/> */}
-      <Filter/>
+      {/* <Filter/> */}
+
+      <SagarCode />
     </div>
   )
 }
